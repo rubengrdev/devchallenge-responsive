@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+html, *{
+    margin:0;
+    padding:0;
+}
+
+header{
+    width:100%;
+    height:10vh;
+}
+nav{
+    display:flex;
+    align-items:center;
+    height:100%;
+}
+nav p{
+    padding-left:5%;
+    font-family: 'Inconsolata', monospace;
+    font-size:24px;
+    letter-spacing:-2px;
+}
+main{
+    width:100%;
+    height:88vh;
+    display:flex;
+}
+section{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+section:nth-child(1) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(1) img{
+    max-width:70%;
+}
+#desc h1{
+    font-family: 'Space Mono', monospace;
+    font-size:70px;
+    width:80%;
+    transition:0.3s;
+}
+#desc p{
+    font-family: 'Space Mono', monospace;
+    font-size:24px;
+    font-weight: 400;
+    width:50%;
+    margin-top: 55px;
+    transition:0.3s;
+}
+#desc button{
+    font-family: 'Space Mono', monospace;
+    font-size:14px;
+    width:auto;
+    padding:30px;
+    margin-top: 55px;
+    color:white;
+    background-color: #333333;
+    transition:0.3s;
+    font-weight: 700;
+    border: none;
+}
+#desc button:hover{
+    background-color: black;
+}
+footer{
+    position:static;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    transition:0.3s;
+}
+small{
+    font-family: 'Montserrat', sans-serif;
+    color:#BDBDBD;
+}
+
+/*Responsive to mobile*/
+@media(max-width:1500px){
+    #desc h1{
+        font-family: 'Space Mono', monospace;
+        font-size:50px;
+        width:80%;
+    }
+    #desc p{
+        width:80%;
+    }
+    main{
+        display:block;
+        height:auto;
+    }
+    #desc{
+       display: block;
+       padding:20px;
+    }
+    footer{
+        margin-top:20px;
+        margin-bottom:5px;
+    }
+    section:nth-child(1) img{
+        max-width:70%;
+    }
+}
+
+@media(max-width:550px){
+    #desc h1{
+        font-family: 'Space Mono', monospace;
+        font-size:40px;
+        width:100%;
+    }
+    #desc p{
+        width:90%;
+        font-size:18px;
+    }
+}
