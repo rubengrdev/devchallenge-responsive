@@ -76,3 +76,41 @@ small{
     font-family: 'Montserrat', sans-serif;
     color:#BDBDBD;
 }
+
+/*Responsive to mobile*/
+@media(max-width:1500px){
+    #desc h1{
+        font-family: 'Space Mono', monospace;
+        font-size:50px;
+        width:80%;
+    }
+    #desc p{
+        width:80%;
+    }
+    main{
+        display:block;
+        height:auto;
+    }
+    #desc{
+       display: block;
+       padding:20px;
+    }
+    footer{
+        margin-top:20px;
+        margin-bottom:5px;
+    }
+    section:nth-child(1) img{
+        max-width:70%;
+    }
+}
+
+@media(max-width:550px){
+    #desc h1{
+        font-family: 'Space Mono', monospace;
+        font-size:50px;
+        width:100%;
+    }
+    #desc p{
+        width:90%;
+    }
+}
