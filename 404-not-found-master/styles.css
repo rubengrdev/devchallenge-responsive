@@ -6,6 +6,7 @@ html, *{
     margin:0;
     padding:0;
 }
+
 header{
     width:100%;
     height:10vh;
@@ -71,6 +72,8 @@ section:nth-child(1) img{
     background-color: black;
 }
 footer{
+    position:static;
+    bottom:0px;
     width:100%;
     text-align: center;
     transition:0.3s;
