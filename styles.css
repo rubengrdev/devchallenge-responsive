@@ -82,7 +82,10 @@ small{
     font-family: 'Montserrat', sans-serif;
     color:#BDBDBD;
 }
-
+a{
+    text-decoration:none;
+    color:rgb(83, 82, 82);
+}
 /*Responsive to mobile*/
 @media(max-width:1500px){
     #desc h1{
